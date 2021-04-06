@@ -5,6 +5,22 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    siteTitle: 'Jorge Cossi | Software Engineer',
+    author: 'Jorge L. Cossi',
+    
+  },
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve:`gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src`
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
 }
