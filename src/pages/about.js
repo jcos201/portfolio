@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby'
 
+import PageTitle from "../components/PageTitle"
+
 const About = () => (
     <div>
-        <h1>Hello.  I'm Jorge</h1>
+        <PageTitle pageTitleText="Hello.  I'm Jorge!"/>
         <p>
         I became a software engineer because I love to build things that people find helpful and functional.
         </p>
@@ -13,7 +15,7 @@ const About = () => (
         <p>
             I'm also a husband and a father to two amazing kids and love to cook and share with others the amazing cuisine from my native Peru.
         </p>
-        <Link to="/contact">Contact Me</Link>
+            <Link to="/contact">Contact Me</Link>
     </div>
 )
 

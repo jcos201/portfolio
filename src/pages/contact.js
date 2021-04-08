@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import PageTitle from "../components/PageTitle";
+
 const Contact = (props) => (
 
     <div>
-        <h1>Feel free to reach out!</h1>
+        <PageTitle pageTitleText="Feel free to reach out!"/>
         <address>
             <p>Email Me: <a href="mailto: jorge@cossi.dev">jorge@cossi.dev</a> </p>
         </address>

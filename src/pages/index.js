@@ -1,9 +1,19 @@
-import React from "react"
+import React from "react";
+
+import PageTitle from "../components/PageTitle";
 
 const Home = () => {
   return (
     <div>
-      <h1>Hi, I'm Jorge</h1>
+      <PageTitle pageTitleText="Hi, I'm Jorge"/>
+      <div>
+        My Skills
+        <div>
+          <div>Programming Languages</div>
+          <div>Frameworks / Databases</div>
+          <div>Software</div>
+        </div>
+      </div>
     </div>
   );
 }

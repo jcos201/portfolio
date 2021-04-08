@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby';
+
+import PageTitle from "../components/PageTitle";
 
 const Articles = ({ data }) => {
     const articles = data.allMarkdownRemark.edges.map(({ node }) =>
@@ -15,7 +17,7 @@ const Articles = ({ data }) => {
 
     return(
         <div>
-            <h1>Latest Projects</h1>
+            <PageTitle pageTitleText="Latest Projects"/>
             { articles }
         </div>
     );
