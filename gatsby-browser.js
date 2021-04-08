@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const React = require('react');
 const Layout = require('./src/components/Layout').default;
 
