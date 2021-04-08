@@ -5,6 +5,9 @@ import Helmet from 'react-helmet';
 import Header from '../Header';
 import Footer from '../Footer';
 
+import "@fontsource/open-sans"
+import "@fontsource/texturina"
+
 import '../../styles/reset.scss';
 import * as styles from './Layout.module.scss';
 

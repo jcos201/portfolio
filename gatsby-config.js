@@ -22,5 +22,13 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts:[
+          `texturina: 300, 400, 500, 600, 700`
+        ], display: 'swap'
+      }
+    },
   ],
 }
