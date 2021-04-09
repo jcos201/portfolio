@@ -29,6 +29,7 @@ module.exports = {
           `texturina: 300, 400, 500, 600, 700`
         ], display: 'swap'
       }
-    }
+    },
+    `gatsby-plugin-fontawesome-css`,
   ],
 }
