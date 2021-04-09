@@ -11,6 +11,8 @@ import "@fontsource/texturina"
 import '../../styles/reset.scss';
 import * as styles from './Layout.module.scss';
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const Layout = (props) => { 
     const data = useStaticQuery(graphql`
         query {

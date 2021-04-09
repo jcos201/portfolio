@@ -9,10 +9,13 @@ const Home = () => {
       <PageTitle pageTitleText="Hi, I'm Jorge"/>
       <div className={styles.skills}>
         My Skills
-        <div>
+        <div className={styles.skillContainers}>
           <div class="container">Programming Languages</div>
-          <div>Frameworks / Databases</div>
-          <div>Software</div>
+          <div class="container">Libraries</div>
+        </div>
+        <div className={styles.skillContainers}>
+          <div class="container">Frameworks / Databases</div>
+          <div class="container">Software</div>
         </div>
       </div>
     </div>

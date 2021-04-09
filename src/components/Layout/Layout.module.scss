@@ -20,5 +20,12 @@
             flex-direction: column;
             align-items: center;
         }
+
+        .skillContainers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
     }
 }

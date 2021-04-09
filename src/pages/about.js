@@ -15,7 +15,7 @@ const About = () => (
         <p>
             I'm also a husband and a father to two amazing kids and love to cook and share with others the amazing cuisine from my native Peru.
         </p>
-            <Link to="/contact">Contact Me</Link>
+            <button class="btn btn-primary"> <Link to="/contact">Contact Me</Link></button>
     </div>
 )
 
