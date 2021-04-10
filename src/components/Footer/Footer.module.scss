@@ -1,5 +1,19 @@
 .Footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .gatsbyLogo {
+            height: 23.63px;
+
+    }
+    .topRow {
+        margin-bottom: 5px;
+    }
+    .icon {
+        font-size: 34px;
+        color: #5085A5 !important;
+        margin: 0 10px;
+    }
 }
