@@ -1,16 +1,20 @@
 .Layout {
+    background-color: #f7f9fb;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
     font-family: "Open Sans";
+    position: relative;
     main {
         display: flex;
         justify-content: center;
-        width: 900px;
+        width: 90%;
         margin: 3rem auto;
         flex-grow: 1;
         padding: 1rem;
         
+
         .jobapp {
             font-family: "Texturina";
         }
@@ -21,29 +25,83 @@
             align-items: center;
             width: 100%;
         }
-
+        
         .container {
             background-color: bisque;
         }
-
+        
         .skillContainers {
             width:100%;
-            border: solid;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-        }
-        .skillHeading {
-            font-weight: bold;
+            
+            
+            
+            .skillSet {
+                width:100%;
+                padding: 10px;
+                border: 1px solid;
+                border-color: #5085A5;
+                margin: 10px 5px;
+                border-radius: 5px;
+                -webkit-box-shadow: 0 0 10px #5085A5;
+                box-shadow: 0 0 10px #5085A5;
+            }
+
+            .skillHeading {
+                font-weight: bold;
+            }
+    
+            .awesome {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: 1.5rem;
+                color: gray !important;
+            }
+
+    
+            
         }
 
-        .awesome {
+        .contactContainer {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            font-size: 2rem;
-            color: gray !important;
+        }
+        
+    }
+
+    .skillIcons {
+        height: 23.63px;
+        margin: 0;
+    }
+
+    .btn-primary {
+        background-color: #5085A5 !important;
+    }
+
+    @media screen and (min-width: 992px) {
+        main {
+            width: 65%;
+            .skillContainers {
+                width:100%;
+                display: flex;
+                flex-direction: row;
+
+            }
+        }
+
+        .skillIcons {
+            height: 31.5px;
+        }
+        .awesome {
+            font-size: 2rem !important;
+
         }
     }
+    
 }
