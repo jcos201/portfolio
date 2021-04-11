@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PageTitle from "../components/PageTitle";
 import * as styles from "../components/Layout/Layout.module.scss";
@@ -16,7 +16,39 @@ const linkStyle = {
     textDecoration: 'none',
 }
 
-const Contact = (props) => (
+const Contact = (props) =>  {
+    
+    const [formState, setFormState] = useState({
+        name: "",
+        email: "",
+    })
+    
+    const handleChange = e => {
+        setFormState({
+            ...formState,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...formState })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+      };
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+    
+    return (
 
     <div>
         <PageTitle pageTitleText="Feel free to reach out!"/>
@@ -37,11 +69,39 @@ const Contact = (props) => (
             </div>
             <div class="container">
                 You can send me a note using the form below!
+                <form onSubmit="handleSubmit" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <label htmlFor="name">Name</label>
+                    <input id="name" 
+                        type="text"
+                        name="name" 
+                        onChange={handleChange} 
+                        value={formState.name}
+                        placeholder="Your name"
+                    />
+                    <label htmlFor="email">Email</label>
+                    <input id="email" 
+                        type="email" 
+                        name="email"
+                        onChange={handleChange} 
+                        value={formState.email}
+                        placeholder="Your email"
+                    />
+                    <label htmlFor="message">Message</label>
+                    <textarea id="message" 
+                        type="message" 
+                        name="message"
+                        onChange={handleChange} 
+                        value={formState.message}
+                        placeholder="Your message"
+                    />
+                    <button type="submit">Submit</button>
+                    
+                </form>
             </div>
         </div>
-    </div>
-
-
-);
+    </div> 
+    )
+};
 
 export default Contact;
