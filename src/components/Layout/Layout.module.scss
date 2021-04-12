@@ -21,6 +21,9 @@ The site is built mobile-first for edits to screens bigger than
         flex-grow: 1;
         padding: 1rem;
         
+        a {
+            text-decoration: none;
+        }
 
 
         .jobapp {

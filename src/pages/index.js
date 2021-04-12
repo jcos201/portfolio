@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare, faCss3Alt, faHtml5, faPython, faNodeJs, faBootstrap,faReact, faFontAwesome, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'gatsby'
 
 import PageTitle from "../components/PageTitle";
 import * as styles from "../components/Layout/Layout.module.scss";
@@ -16,12 +17,14 @@ import pgSQL from "../../static/posgresql.png"
 import vs from "../../static/vs.png"
 import exprs from "../../static/expressV2.png"
 
+
+
 const Home = () => {
   return (
     <div className={styles.skills}>
       <PageTitle pageTitleText="Hi, I'm Jorge."/> 
       <PageTitle pageTitleText="This is my website.  I've been writing code in JavaScript and Python for many years now.  I truly enjoy programming but I'm now ready for my next challenge as a Software Engineer."/> 
-        <button class="btn btn-outline-primary">Take a look around.</button>
+      <button class="btn btn-outline-primary"><Link to="/about">Take a look around</Link></button>
         <hr/>
         <p>Technologies I've Worked With</p>
         <div className={styles.skillContainers}>
