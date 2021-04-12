@@ -1,4 +1,11 @@
+/*
+The site is built mobile-first for edits to screens bigger than
+992px scroll to past main css.
+*/
 .Layout {
+
+    $primary: #5085A5;
+
     background-color: #f7f9fb;
     display: flex;
     flex-direction: column;
@@ -15,8 +22,13 @@
         padding: 1rem;
         
 
+
         .jobapp {
             font-family: "Texturina",serif;
+            font-style: italic;
+            font-weight: bold;
+            color: $primary;
+            font-size: 1.25rem;
         }
 
         .skills {
@@ -38,11 +50,11 @@
                 width:100%;
                 padding: 10px;
                 border: 1px solid;
-                border-color: #5085A5;
+                border-color: $primary;
                 margin: 10px 5px;
                 border-radius: 5px;
-                -webkit-box-shadow: 0 0 10px #5085A5;
-                box-shadow: 0 0 10px #5085A5;
+                -webkit-box-shadow: 0 0 10px $primary;
+                box-shadow: 0 0 10px $primary;
             }
 
             .skillHeading {
@@ -72,29 +84,28 @@
                 justify-content: start;
                 align-items: center;
 
-                .iconLabel {
-                    display: none;
-                }
 
                 .contact {
                     font-family: "Courgette", cursive;
                     font-size: 1.75rem;
                     margin-left: 15px;
                 }
-                .contactForm {
-                    display: flex;
-                    flex-direction: column;
-                    
-                }
+                
     
 
             }
 
-            
-            
-        }
+            .contactForm {
+                display: flex;
+                flex-direction: column;
+            }
 
+        }   
         
+        .lineBreak {
+            display: inline;
+            color: $primary;
+        }
         
     }
 
@@ -104,17 +115,22 @@
     }
 
     .btn-primary {
-        background-color: #5085A5 !important;
+        background-color: $primary !important;
     }
 
     @media screen and (min-width: 992px) {
         main {
             width: 65%;
+
             .skillContainers {
                 width:100%;
                 display: flex;
                 flex-direction: row;
 
+            }
+
+            .contactContainer {
+                flex-direction: row;
             }
         }
 
@@ -124,6 +140,10 @@
         .awesome {
             font-size: 2rem !important;
 
+        }
+
+        .lineBreak {
+            display: none;
         }
     }
     

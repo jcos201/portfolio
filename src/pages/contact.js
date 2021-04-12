@@ -16,11 +16,19 @@ const linkStyle = {
     textDecoration: 'none',
 }
 
+const inputField = {
+    width: '100%',
+    marginBottom: '10px',
+    padding: '5px',
+
+}
+
 const Contact = (props) =>  {
     
     const [formState, setFormState] = useState({
         name: "",
         email: "",
+        message: "",
     })
     
     const handleChange = e => {
@@ -30,7 +38,11 @@ const Contact = (props) =>  {
         })
     }
 
+    
+
     const handleSubmit = e => {
+        e.preventDefault();
+
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -39,7 +51,6 @@ const Contact = (props) =>  {
           .then(() => alert("Success!"))
           .catch(error => alert(error));
   
-        e.preventDefault();
       };
 
     const encode = (data) => {
@@ -55,20 +66,21 @@ const Contact = (props) =>  {
         <div className={styles.contactContainer}>
             <div class="container">
             <address>
-                <p><FontAwesomeIcon style={iconStyles} icon={faEnvelope} /> <span className={styles.iconLabel}>Email</span></p>
+                <p><FontAwesomeIcon style={iconStyles} icon={faEnvelope} /></p>
                 <p><a href="mailto: jorge@cossi.dev" style={linkStyle}><span  className={styles.contact}>jorge@cossi.dev</span></a> </p>
             </address>
             <address>
-                <p><FontAwesomeIcon style={iconStyles} icon={faGithub} /> <span className={styles.iconLabel}>Github</span></p>
+                <p><FontAwesomeIcon style={iconStyles} icon={faGithub} /></p>
                 <p><a href="https://github.com/jcos201" target="_blank" rel="noreferrer" style={linkStyle}><span  className={styles.contact}>jcos201</span></a></p>
             </address>
             <address>
-                <p><FontAwesomeIcon style={iconStyles} icon={faLinkedin} /> <span className={styles.iconLabel}>LinkedIn</span></p>
+                <p><FontAwesomeIcon style={iconStyles} icon={faLinkedin} /></p>
                 <p><a href="https://www.linkedin.com/in/jorge-cossi/" target="_blank" rel="noreferrer" style={linkStyle}><span  className={styles.contact}>jorge-cossi</span></a> </p>
             </address>
             </div>
+            <hr className={styles.lineBreak}/>
             <div class="container" className={styles.contactForm}>
-                You can send me a note using the form below!
+                <p className={styles.jobapp}>Send me a note in the form below!</p>
                 <div>
                     <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="contact" />
@@ -78,6 +90,8 @@ const Contact = (props) =>  {
                             onChange={handleChange} 
                             value={formState.name}
                             placeholder="Your name"
+                            style={inputField}
+                            required
                             />
                         <input id="email" 
                             type="email" 
@@ -85,15 +99,19 @@ const Contact = (props) =>  {
                             onChange={handleChange} 
                             value={formState.email}
                             placeholder="Your email"
+                            style={inputField}
                             />
                         <textarea id="message" 
+                            required
                             type="message" 
                             name="message"
+                            rows="6"
                             onChange={handleChange} 
                             value={formState.message}
                             placeholder="Your message"
+                            style={inputField}
                             />
-                        <button type="submit">Submit</button>
+                        <button  class="btn btn-primary" type="submit">Submit</button>
                         
                     </form>
                 </div>

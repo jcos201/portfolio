@@ -18,7 +18,7 @@ const About = () => (
             I've been using JavaScript and Python to write algorithms as a Market Research Survey Programmer for over 12 years, but my love lies in web development.  I enjoy creating things that are useful - I get great joy knowing the apps I've built are used by others.
         </p>
         <p>
-            I'm also a husband and a father to two amazing kids and love to cook and share with others the amazing cuisine from my native Peru.
+            I'm also a husband and a father to two beautiful and kind kids and love to cook and share with others the amazing cuisine from my native Peru.
         </p>
             <button class="btn btn-primary"> <Link style={linkStyle} to="/contact">Contact Me</Link></button>
     </div>
