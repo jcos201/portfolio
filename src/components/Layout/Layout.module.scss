@@ -16,7 +16,7 @@
         
 
         .jobapp {
-            font-family: "Texturina";
+            font-family: "Texturina",serif;
         }
 
         .skills {
@@ -26,10 +26,6 @@
             width: 100%;
         }
         
-        .container {
-            background-color: bisque;
-        }
-        
         .skillContainers {
             width:100%;
             display: flex;
@@ -37,8 +33,6 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            
-            
             
             .skillSet {
                 width:100%;
@@ -62,16 +56,45 @@
                 font-size: 1.5rem;
                 color: gray !important;
             }
-
-    
             
         }
 
+        
+
         .contactContainer {
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
+
+            address {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                .iconLabel {
+                    display: none;
+                }
+
+                .contact {
+                    font-family: "Courgette", cursive;
+                    font-size: 1.75rem;
+                    margin-left: 15px;
+                }
+                .contactForm {
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+    
+
+            }
+
+            
+            
         }
+
+        
         
     }
 

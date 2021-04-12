@@ -7,6 +7,7 @@ import Footer from '../Footer';
 
 import "@fontsource/open-sans"
 import "@fontsource/texturina"
+import "@fontsource/courgette"
 
 import '../../styles/reset.scss';
 import * as styles from './Layout.module.scss';
