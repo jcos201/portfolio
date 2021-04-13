@@ -31,14 +31,17 @@
     "gatsby-plugin-scroll-reveal": "0.0.7",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
+    "jquery": "^1.9.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "save": "^2.4.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "webpack": "^5.32.0"
   },
   "repository": {
     "type": "git",
