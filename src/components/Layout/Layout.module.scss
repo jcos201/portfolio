@@ -14,9 +14,7 @@ The site is built mobile-first for edits to screens bigger than
     position: relative;
     
         
-        a {
-            text-decoration: none;
-        }
+        
 
 
         .jobapp {
@@ -51,15 +49,7 @@ The site is built mobile-first for edits to screens bigger than
             .skillHeading {
                 font-weight: bold;
             }
-    
-            .awesome {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                font-size: 1.5rem;
-                color: gray !important;
-            }
-            
+
         }
 
         
@@ -134,6 +124,9 @@ The site is built mobile-first for edits to screens bigger than
         }
     }
     
+}
+a {
+    text-decoration: none;
 }
 
 main {

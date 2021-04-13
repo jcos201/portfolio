@@ -1,30 +1,31 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
-import * as styles from './Header.module.scss';
 
 const navHeader = {
-    width: '-webkit-fill-available',    
+    width: '100%',
+    backgroundColor: '#f7f9fb',    
 }
 
+const linkFont = {
+    textAlign: 'right',
+}
 
 const Header = (props) => (
     <header class="sticky-top">  
-        <Container fluid>
-            <Navbar style={navHeader} expand="lg" bg="light" variant="light">
+            <Navbar style={navHeader} expand="lg" variant="light">
                 <Navbar.Brand href="/">Cossi.Dev</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/about">About</Nav.Link>
-                        <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                        <Nav.Link as={Link} style={linkFont} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} style={linkFont} to="/about">About</Nav.Link>
+                        <Nav.Link as={Link} style={linkFont} to="/projects">Projects</Nav.Link>
+                        <Nav.Link as={Link} style={linkFont} to="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </Container>
     </header>
 );
 
