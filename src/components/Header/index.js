@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 
 import * as styles from './Header.module.scss';
 
@@ -11,18 +11,20 @@ const navHeader = {
 
 const Header = (props) => (
     <header class="sticky-top">  
-        <Navbar style={navHeader} expand="lg" bg="light" variant="light">
-            <Navbar.Brand href="/">Cossi.Dev</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link as={Link} to="/">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/about">About</Nav.Link>
-                    <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                    <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <Container fluid>
+            <Navbar style={navHeader} expand="lg" bg="light" variant="light">
+                <Navbar.Brand href="/">Cossi.Dev</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/about">About</Nav.Link>
+                        <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </Container>
     </header>
 );
 
