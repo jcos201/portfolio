@@ -12,13 +12,7 @@ The site is built mobile-first for edits to screens bigger than
     
     font-family: "Open Sans";
     position: relative;
-    main {
-        display: flex;
-        justify-content: center;
-        width: 90%;
-        margin: 3rem auto;
-        flex-grow: 1;
-        padding: 1rem;
+    
         
         a {
             text-decoration: none;
@@ -33,12 +27,7 @@ The site is built mobile-first for edits to screens bigger than
             font-size: 1.25rem;
         }
 
-        .skills {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
+        
         
         .skillContainers {
             width:100%;
@@ -109,7 +98,6 @@ The site is built mobile-first for edits to screens bigger than
             color: $primary;
         }
         
-    }
 
     .skillIcons {
         height: 23.63px;
@@ -121,20 +109,17 @@ The site is built mobile-first for edits to screens bigger than
     }
 
     @media screen and (min-width: 992px) {
-        main {
-            width: 65%;
+        .skillContainers {
+            width:100%;
+            display: flex;
+            flex-direction: row;
 
-            .skillContainers {
-                width:100%;
-                display: flex;
-                flex-direction: row;
-
-            }
-
-            .contactContainer {
-                flex-direction: row;
-            }
         }
+
+        .contactContainer {
+            flex-direction: row;
+        }
+
 
         .skillIcons {
             height: 31.5px;
@@ -149,4 +134,20 @@ The site is built mobile-first for edits to screens bigger than
         }
     }
     
+}
+
+main {
+    display: flex !important;
+    justify-content: center;
+    width: 90%;
+    margin: 3rem auto;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 65%;
+    }
+       
 }
