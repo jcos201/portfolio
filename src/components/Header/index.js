@@ -2,6 +2,8 @@ import { Link } from 'gatsby';
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
+import logo from "../../../static/my_logo.png";
+
 
 const navHeader = {
     width: '100%',
@@ -15,7 +17,7 @@ const linkFont = {
 const Header = (props) => (
     <header class="sticky-top">  
             <Navbar style={navHeader} expand="lg" variant="light">
-                <Navbar.Brand href="/">Cossi.Dev</Navbar.Brand>
+                <Navbar.Brand href="/"><img src={logo} alt="My Logo"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
