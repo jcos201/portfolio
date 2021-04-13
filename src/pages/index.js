@@ -26,6 +26,14 @@ const skills = {
   alignItems: 'center',
   width: '100%',
 }
+const awesome = {
+  display: 'flex',
+  justifyContent: 'space-around',
+  alignItems: 'center',
+  fontSize: '1.5rem',
+  color: 'gray !important',
+  
+}
 
 const Home = () => {
   return (
@@ -39,7 +47,7 @@ const Home = () => {
           <div class="container" className={styles.skillSet} data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
             <p className={styles.skillHeading}>Programming Languages</p>
             <p>JavaScript, Python, HTML5, CSS3</p>
-            <div className={styles.awesome}>
+            <div style={awesome}>
             <FontAwesomeIcon icon={faJsSquare} />
             <FontAwesomeIcon icon={faPython} />
             <FontAwesomeIcon icon={faHtml5} />
@@ -51,7 +59,7 @@ const Home = () => {
   data-sal-easing="ease">
             <p className={styles.skillHeading}>Frameworks / Databases</p>
             <p>Bootstrap, django, Express, GatsbyJS, mongoDB</p>
-            <div className={styles.awesome}>
+            <div style={awesome}>
             <FontAwesomeIcon icon={faBootstrap} />
             <img src={django} className={styles.skillIcons} alt="I've built applications using Django framework"/>
             <img src={exprs} className={styles.skillIcons} alt="Have built a full stack application using Express"/>
@@ -66,7 +74,7 @@ const Home = () => {
   data-sal-easing="ease">
             <p className={styles.skillHeading}>Libraries</p>
             <p>React, Materialize, Font Awesome</p>
-            <div className={styles.awesome}>
+            <div style={awesome}>
             <FontAwesomeIcon icon={faReact} />
             <img src={mat} className={styles.skillIcons} alt="I have used the Materialize.css library on several projects."/>
             <FontAwesomeIcon icon={faFontAwesome} />
@@ -77,7 +85,7 @@ const Home = () => {
   data-sal-easing="ease">
             <p className={styles.skillHeading}>Software</p>
             <p>GitHub, node.JS, PostgreSQL, VS Code</p>
-            <div className={styles.awesome}>
+            <div style={awesome}>
             <FontAwesomeIcon icon={faGithub} />
             <FontAwesomeIcon icon={faNodeJs} />
             <img src={pgSQL} className={styles.skillIcons} alt="I've used PostgreSQL when building Django applications and have built full CRUD applications using it."/>
