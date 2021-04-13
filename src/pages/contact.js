@@ -4,7 +4,7 @@ import PageTitle from "../components/PageTitle";
 import * as styles from "../components/Layout/Layout.module.scss";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const iconStyles = {
@@ -76,6 +76,10 @@ const Contact = (props) =>  {
             <address>
                 <p><FontAwesomeIcon style={iconStyles} icon={faLinkedin} /></p>
                 <p><a href="https://www.linkedin.com/in/jorge-cossi/" target="_blank" rel="noreferrer" style={linkStyle}><span  className={styles.contact}>jorge-cossi</span></a> </p>
+            </address>
+            <address>
+                <p><FontAwesomeIcon style={iconStyles} icon={faTwitterSquare} /></p>
+                <p><a href="https://twitter.com/jcos201" target="_blank" rel="noreferrer" style={linkStyle}><span  className={styles.contact}>@jcos201</span></a> </p>
             </address>
             </div>
             <hr className={styles.lineBreak}/>
