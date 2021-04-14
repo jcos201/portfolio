@@ -52,7 +52,7 @@ const Projects = (props) => {
         <PageTitle pageTitleText="Projects"/>
             <Container>
                 <Row style={projectRows}>
-                    <Col className={styles.project1} style={odd} lg={4}>
+                    <Col className={styles.project1} style={odd} lg={5}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
@@ -68,7 +68,7 @@ const Projects = (props) => {
                             </Row>
                         </Card>
                     </Col>
-                    <Col className={styles.project2} style={even} lg={4}>
+                    <Col className={styles.project2} style={even} lg={5}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
@@ -88,7 +88,7 @@ const Projects = (props) => {
             </Container>
             <Container>
                 <Row style={projectRows}>
-                    <Col className={styles.project3} style={odd} lg={4}>
+                    <Col className={styles.project3} style={odd} lg={5}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
@@ -104,13 +104,13 @@ const Projects = (props) => {
                             </Row>
                         </Card>
                     </Col>
-                    <Col className={styles.project4} style={even} lg={4}>
+                    <Col className={styles.project4} style={even} lg={5}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
                                     <span className={styles.projects}>WAR! The card game.</span>
                                     <p>HTML5 / CSS3 / JavaScript</p>
-                                    <p className={styles.detailTxt}>Card game themed with famous villain</p>
+                                    <p className={styles.detailTxt}>Card game themed with famous movie villain</p>
                                 </Col>
                             </Row>
                             <Row style={projectBtn}>
