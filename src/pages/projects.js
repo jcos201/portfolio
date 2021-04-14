@@ -62,7 +62,7 @@ const Projects = (props) => {
                             </Row>
                             <Row style={projectBtn}>
                                 <Col sm="12">
-                                    <button class="btn btn-primary">See it in action</button>
+                                <a href="https://taskcollector.herokuapp.com/" target="_blank" rel="noreferrer"><button class="btn btn-primary">See it in action</button></a>
                                 </Col>
                             </Row>
                         </Card>
@@ -77,7 +77,7 @@ const Projects = (props) => {
                             </Row>
                             <Row style={projectBtn}>
                                 <Col sm="12">
-                                    <button class="btn btn-primary">See it in action</button>
+                                <a href="https://mern-job-search-tracker.netlify.app/" target="_blank" rel="noreferrer"><button class="btn btn-primary">See it in action</button></a>
                                 </Col>
                             </Row>
                         </Card>
@@ -96,7 +96,7 @@ const Projects = (props) => {
                             </Row>
                             <Row style={projectBtn}>
                                 <Col sm="12">
-                            <button class="btn btn-primary">See it in action</button>
+                                <a href="https://statsyo.herokuapp.com/" target="_blank" rel="noreferrer"><button class="btn btn-primary">See it in action</button></a>
                                 </Col>
                             </Row>
                         </Card>
@@ -111,7 +111,7 @@ const Projects = (props) => {
                             </Row>
                             <Row style={projectBtn}>
                                 <Col sm="12">
-                            <button class="btn btn-primary">See it in action</button>
+                                <a href="https://war-the-card-game.netlify.app/" target="_blank" rel="noreferrer"><button class="btn btn-primary">See it in action</button></a>
                                 </Col>
                             </Row>
                         </Card>
