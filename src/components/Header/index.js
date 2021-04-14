@@ -19,8 +19,8 @@ const myLogo = {
 }
 
 const Header = (props) => (
-    <header class="sticky-top">  
-            <Navbar style={navHeader} expand="lg" variant="light">
+    <header  style={navHeader} class="sticky-top">  
+            <Navbar expand="lg" variant="light">
                 <Navbar.Brand href="/"><img src={logo} style={myLogo} alt="My Logo"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
