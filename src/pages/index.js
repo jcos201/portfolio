@@ -31,7 +31,7 @@ const awesome = {
   justifyContent: 'space-around',
   alignItems: 'center',
   fontSize: '1.5rem',
-  color: 'gray !important',
+  color: '#808080',
   
 }
 
@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <div style={skills}>
       <PageTitle pageTitleText="Hi, I'm Jorge."/> 
-      <PageTitle pageTitleText="This is my website.  I've been writing code in JavaScript and Python for many years now.  I truly enjoy programming but I'm now ready for my next challenge as a Software Engineer."/> 
+      <PageTitle pageTitleText="I've been writing code in JavaScript and Python for market research companies.  I truly enjoy programming, but I'm now ready for my next challenge as a Software Engineer."/> 
       <button class="btn btn-outline-primary"><Link to="/about">Take a look around</Link></button>
         <hr/>
         <p>Technologies I've Worked With</p>
