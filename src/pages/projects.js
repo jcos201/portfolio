@@ -15,7 +15,7 @@ const projectDiv = {
 const odd = {
     textAlign: 'center',
     border: 'solid 1px',
-    borderColor: 'rgb(80, 133, 165, 0.5)',
+    borderColor: 'rgb(143, 193, 227, 0.5)',
 }
 
 const even = {
@@ -58,6 +58,7 @@ const Projects = (props) => {
                                 <Col>
                                     <span className={styles.projects}>Task Collector</span>
                                     <p>Django / Python / PostgeSQL</p>
+                                    <p className={styles.detailTxt}>Project Management Tool</p>
                                 </Col>
                             </Row>
                             <Row style={projectBtn}>
@@ -73,6 +74,7 @@ const Projects = (props) => {
                                 <Col>
                                     <span className={styles.projects}>Job Application Tracker</span>
                                     <p>MERN Stack</p>
+                                    <p className={styles.detailTxt}>Online resource for job seekers</p>
                                 </Col>
                             </Row>
                             <Row style={projectBtn}>
@@ -92,6 +94,7 @@ const Projects = (props) => {
                                 <Col>
                                     <span className={styles.projects}>StatsYo!</span>
                                     <p>Django / Python / PostgeSQL</p>
+                                    <p className={styles.detailTxt}>Follow favorite players using MLB Stats API</p>
                                 </Col>
                             </Row>
                             <Row style={projectBtn}>
@@ -107,6 +110,7 @@ const Projects = (props) => {
                                 <Col>
                                     <span className={styles.projects}>WAR! The card game.</span>
                                     <p>HTML5 / CSS3 / JavaScript</p>
+                                    <p className={styles.detailTxt}>Card game themed with famous villain</p>
                                 </Col>
                             </Row>
                             <Row style={projectBtn}>

@@ -127,8 +127,8 @@ main {
     width: 50%
 }
 
-.projectCol {
-    color: red;
+.detailTxt {
+    display: none;
 }
 
 
@@ -149,6 +149,13 @@ main {
     .projectCard {
         min-height: 280px;
         padding: 20px;
+    }
+
+    .detailTxt {
+        color: #31708e;
+        font-weight: bold;
+        font-style: italic;
+        display: block;
     }
 
 }
