@@ -52,7 +52,7 @@ const Projects = (props) => {
         <PageTitle pageTitleText="Projects"/>
             <Container>
                 <Row style={projectRows}>
-                    <Col className={styles.project1} style={odd} lg={5}>
+                    <Col className={styles.project1} style={odd} lg={5} xl={4}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
@@ -68,7 +68,7 @@ const Projects = (props) => {
                             </Row>
                         </Card>
                     </Col>
-                    <Col className={styles.project2} style={even} lg={5}>
+                    <Col className={styles.project2} style={even} lg={5} xl={4}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
@@ -88,7 +88,7 @@ const Projects = (props) => {
             </Container>
             <Container>
                 <Row style={projectRows}>
-                    <Col className={styles.project3} style={odd} lg={5}>
+                    <Col className={styles.project3} style={odd} lg={5} xl={4}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
@@ -104,7 +104,7 @@ const Projects = (props) => {
                             </Row>
                         </Card>
                     </Col>
-                    <Col className={styles.project4} style={even} lg={5}>
+                    <Col className={styles.project4} style={even} lg={5} xl={4}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
                                 <Col>
