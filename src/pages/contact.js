@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+
 const iconStyles = {
     fontSize: '2.5rem',
     color: '#5085A5'
@@ -25,11 +26,15 @@ const inputField = {
 
 const Contact = (props) =>  {
     
-    const [formState, setFormState] = useState({
-        name: "",
-        email: "",
-        message: "",
-    })
+    const [formState, setFormState] = useState(getInitialFormState);
+
+    function getInitialFormState(){
+        return {
+            name: "",
+            email: "",
+            message: "",
+        }
+    };
     
     const handleChange = e => {
         setFormState({
@@ -41,16 +46,17 @@ const Contact = (props) =>  {
     
 
     const handleSubmit = e => {
-        e.preventDefault();
-
+        
         fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...formState })
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...formState })
         })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
-  
+        .then(() => alert("Thanks for the feedback!"))
+        .then(() => setFormState(getInitialFormState()))
+        .catch(error => alert(error));
+        
+        e.preventDefault();
       };
 
     const encode = (data) => {
