@@ -18,8 +18,12 @@ import vs from "../../static/vs.png"
 import exprs from "../../static/expressV2.png"
 
 /*
-Component Scoped CSS
+CSS in JS
 */
+const smallText = {
+  fontSize: '0.9rem',
+}
+
 const skills = {
   display: 'flex',
   flexDirection: 'column',
@@ -40,13 +44,13 @@ const Home = () => {
     <div style={skills}>
       <PageTitle pageTitleText="Hi, I'm Jorge."/> 
       <PageTitle pageTitleText="I've been writing code in JavaScript and Python for market research companies.  I truly enjoy programming, but I'm now ready for my next challenge as a Software Engineer."/> 
-      <button class="btn btn-outline-primary"><Link to="/about">Take a look around</Link></button>
+      <Link to="/about"><button class="btn btn-outline-primary">Take a look around</button></Link>
         <hr/>
         <p>Technologies I've Worked With</p>
         <div className={styles.skillContainers}>
           <div class="container" className={styles.skillSet} data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
             <p className={styles.skillHeading}>Programming Languages</p>
-            <p>JavaScript, Python, HTML5, CSS3</p>
+            <p style={smallText}>JavaScript, Python, HTML5, CSS3</p>
             <div style={awesome}>
             <FontAwesomeIcon icon={faJsSquare} />
             <FontAwesomeIcon icon={faPython} />
@@ -58,7 +62,7 @@ const Home = () => {
   data-sal-delay="300"
   data-sal-easing="ease">
             <p className={styles.skillHeading}>Frameworks / Databases</p>
-            <p>Bootstrap, django, Express, GatsbyJS, mongoDB</p>
+            <p style={smallText}>Bootstrap, django, Express, GatsbyJS, mongoDB</p>
             <div style={awesome}>
             <FontAwesomeIcon icon={faBootstrap} />
             <img src={django} className={styles.skillIcons} alt="I've built applications using Django framework"/>
@@ -73,7 +77,7 @@ const Home = () => {
   data-sal-delay="300"
   data-sal-easing="ease">
             <p className={styles.skillHeading}>Libraries</p>
-            <p>React, Materialize, Font Awesome</p>
+            <p style={smallText}>React, Materialize, Font Awesome</p>
             <div style={awesome}>
             <FontAwesomeIcon icon={faReact} />
             <img src={mat} className={styles.skillIcons} alt="I have used the Materialize.css library on several projects."/>
@@ -84,7 +88,7 @@ const Home = () => {
   data-sal-delay="300"
   data-sal-easing="ease">
             <p className={styles.skillHeading}>Software</p>
-            <p>GitHub, node.JS, PostgreSQL, VS Code</p>
+            <p style={smallText}>GitHub, node.JS, PostgreSQL, VS Code</p>
             <div style={awesome}>
             <FontAwesomeIcon icon={faGithub} />
             <FontAwesomeIcon icon={faNodeJs} />

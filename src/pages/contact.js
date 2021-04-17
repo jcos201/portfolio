@@ -28,6 +28,7 @@ const Contact = (props) =>  {
     
     const [formState, setFormState] = useState(getInitialFormState);
 
+    // This function will be used to initiate and clear contact form on submission
     function getInitialFormState(){
         return {
             name: "",
@@ -43,10 +44,9 @@ const Contact = (props) =>  {
         })
     }
 
-    
-
     const handleSubmit = e => {
         
+        // This will send Netlify the contact form data and notify domain owner of submission
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },

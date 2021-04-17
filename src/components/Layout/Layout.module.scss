@@ -43,7 +43,10 @@ main {
 }
 
 .skillSet {
-    width:100%;
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     border: 1px solid;
     border-color: #5085A5;
@@ -170,11 +173,10 @@ main {
 
     }
 
-    .skillContainers {
-        width:100%;
-        display: flex;
-        flex-direction: row;
 
+    .skillSet {
+        width: 100%;
+        height: 175px;
     }
 
     .contactContainer {
