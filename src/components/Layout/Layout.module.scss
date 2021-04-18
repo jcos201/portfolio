@@ -24,13 +24,18 @@ a {
     text-decoration: none;
 }
 
-main {
+.mainContainer {
     display: flex !important;
     justify-content: center;
     width: 90%;
     margin: 3rem auto;
     flex-grow: 1;
     padding: 1rem;
+}
+
+.landingBox {
+    background-color: blue;
+    height: 100vh;
 }
 
 .skillContainers {
@@ -93,41 +98,38 @@ main {
 .btn-primary {
     background-color: #5085A5 !important;
 }
-.project1 {
+
+.project1, .project2, .project3, .project4 {
+    margin-bottom: 10px;
     padding: 0 !important;
-    background-color: rgb(238,226,220);
     background-size: 50%;
     background-repeat: no-repeat;
     width: 50%;
+}
+
+.project1 {
+    background-color: rgb(238,226,220);
     background-position: right !important;
     background-image: url('../../../static/TC.png');
 }
 .project2 {
-    padding: 0 !important;
     background-color: rgb(251,239,193);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    width: 50%;
     background-position: left !important;
     background-image: url('../../../static/appTracker.png');
 }
 .project3 {
-    padding: 0 !important;
     background-color: rgb(255,255,255);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    width: 50%;
     background-position: right !important;
     background-image: url('../../../static/statsyo.png');
 }
 .project4 {
-    padding: 0 !important;
     background-color: rgb(45,95,92);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    width: 50%;
     background-position: left !important;
     background-image: url('../../../static/war.png');
+}
+
+.project1:hover{
+    transform: scale(1.1);
 }
 
 .projectCard {
@@ -162,7 +164,7 @@ main {
 }
 
 @media screen and (min-width: 992px) {
-    main {
+    .mainContainer {
         width: 65%;
     }
 
@@ -172,7 +174,6 @@ main {
         flex-direction: row;
 
     }
-
 
     .skillSet {
         width: 100%;
@@ -204,9 +205,17 @@ main {
     .project1, .project2, .project3, .project4 {
         background-size: 100%;
         margin: 5px;
+        margin-bottom: 20px;
+
         -webkit-box-shadow: 0 0 15px #5085A5;
         box-shadow: 0 0 15px #5085A5;
     }
+
+    .project1, .project3 {
+        margin-right: 25px;
+    }
+
+    
 
 
     .projectCard:hover{
