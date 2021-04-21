@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-.mainContainer {
+main {
     display: flex !important;
     justify-content: center;
     width: 90%;
@@ -128,8 +128,9 @@ a {
     background-image: url('../../../static/war.png');
 }
 
-.project1:hover{
+.project1:hover, .project2:hover, .project3:hover, .project4:hover{
     transform: scale(1.1);
+    transition-delay: .1s;
 }
 
 .projectCard {
@@ -229,11 +230,11 @@ a {
 @media screen and (min-width: 1440px) {
 
     .projectCard {
-        min-height: 378px;
+        min-height: 330px;
     }
 
     .project1, .project2, .project3, .project4 {
-        margin: 5px;
+        margin: 15px;
         -webkit-box-shadow: 0 0 10px #5085A5;
         box-shadow: 0 0 10px #5085A5;
     }
