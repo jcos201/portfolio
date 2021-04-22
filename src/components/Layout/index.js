@@ -38,11 +38,9 @@ const Layout = (props) => {
             </Helmet>
             <div className={styles.Layout}>
                 <Header />
-
                     <main>
                         { props.children }
                     </main>
-
                 <Footer author={author}/>
             </div>
         </Fragment>

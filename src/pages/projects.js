@@ -52,6 +52,9 @@ const Projects = (props) => {
         <PageTitle pageTitleText="Projects"/>
             <Container>
                 <Row style={projectRows}>
+                    {/* Each Project will have a card
+                        Each card will have its own bg color
+                        animation is called in CSS by classname */}
                     <Col className={styles.project1} style={odd} lg={5} xl={4}>
                         <Card className={styles.projectCard} style={innerCard} sm={6}>
                             <Row>
